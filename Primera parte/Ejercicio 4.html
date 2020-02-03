@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function arrPenultimo(arr){
+                if(arr.length<2){
+                    return null
+                }
+                return arr[arr.length-2]
+                
+            }
+            console.log(arrPenultimo([42,true,4,"Liam", 7])) // devuelve “Liam”. Si el array es muy pequeño, devuelve null.  
+            console.log(arrPenultimo([1])) // devuelve null
+        </script>
+    </head>
+</html>

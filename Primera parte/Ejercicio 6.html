@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function sgdoMasGrande(arr,n){
+                if(arr.length<2){
+                    return null
+                }
+                temp = arr[arr.length-1]
+                for(i=arr.length-1;i>=0;i--){
+                    if(arr[i]>temp){
+                        temp=i
+                    }
+                }
+                delete arr[temp];
+                for(i=arr.length-1;i>=0;i--){
+                    if(arr[i]>temp){
+                        temp=arr[i]
+                    }
+                }
+                return temp
+            }
+            console.log(sgdoMasGrande([42,1,4,3.14,7])) // devuelve 7
+            console.log(sgdoMasGrande([5])) // devuelve null
+        </script>
+    </head>
+</html>

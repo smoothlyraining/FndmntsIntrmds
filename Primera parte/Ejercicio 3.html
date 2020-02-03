@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function fibonacci1(num){
+                arr=[0,1]
+                for(i=2;i<=num;i++){
+                    arr.push(arr[i-2]+arr[i-1])
+                }
+                console.log(arr[num])
+            }
+            fibonacci1(0) // debería devolver 0
+            fibonacci1(1) // debería devolver 1
+            fibonacci1(2) // debería devolver 1
+            fibonacci1(3) // debería devolver 2
+            fibonacci1(4) // debería devolver 3
+            fibonacci1(5) // debería devolver 5
+            fibonacci1(6) // debería devolvere 8
+            fibonacci1(7) // debería devolver 13
+        </script>
+    </head>
+</html>

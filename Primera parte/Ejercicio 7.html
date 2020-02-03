@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function dobleProblema(arr){
+                arr.aux=[]
+                for(i=0;i<arr.length;i++){
+                    arr.aux.push(arr[i])
+                    arr.aux.push(arr[i])
+                }
+                return arr.aux
+            }
+            console.log(dobleProblema([4, "Ulysses", 42, false])) // devuelve [4,4, "Ulysses", "Ulysses", 42, 42, false, false].
+        </script>
+    </head>
+</html>

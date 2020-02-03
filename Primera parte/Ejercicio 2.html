@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function factorial(num){
+                array=[]
+                for(i=num;i>0;i--){
+                    array.push(i)
+                }
+                total = array[0]
+                for(j=1; j<array.length;j++){
+                    total=total*j
+                }
+                console.log(total)
+            }
+            factorial(5) // debería devolver 120 (5*4*3*2*1)
+        </script>
+    </head>
+</html>
